@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>LLM Token Cost Audit</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 32px; color: #1f2937; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
+th, td { border: 1px solid #d1d5db; padding: 8px; text-align: left; }
+th { background: #f3f4f6; }
+</style>
+<h1>LLM Token Cost Audit</h1>
+<h2>By Model</h2>
+<table><thead><tr><th>Model</th><th>Requests</th><th>Input</th><th>Output</th><th>Cost</th></tr></thead><tbody><tr><td>example-sonnet</td><td>2</td><td>97000</td><td>7200</td><td>$0.3990</td></tr><tr><td>example-haiku</td><td>1</td><td>4500</td><td>900</td><td>$0.0072</td></tr></tbody></table>
+<h2>Requests</h2>
+<table><thead><tr><th>Line</th><th>Time</th><th>Request</th><th>Model</th><th>Input</th><th>Output</th><th>Cost</th><th>Flags</th></tr></thead><tbody><tr><td>1</td><td>2026-05-21T09:00:00Z</td><td>req_001</td><td>example-sonnet</td><td>12000</td><td>1200</td><td>$0.054000</td><td>expensive</td></tr><tr><td>2</td><td>2026-05-21T09:05:00Z</td><td>req_002</td><td>example-haiku</td><td>4500</td><td>900</td><td>$0.007200</td><td></td></tr><tr><td>3</td><td>2026-05-21T09:10:00Z</td><td>req_003</td><td>example-sonnet</td><td>85000</td><td>6000</td><td>$0.345000</td><td>expensive</td></tr></tbody></table>
+</html>
