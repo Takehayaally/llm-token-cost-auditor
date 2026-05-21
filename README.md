@@ -10,6 +10,13 @@ By TinyOps Tools. Support: q749381667@gmail.com.
 python products/llm-token-cost-auditor/token_cost_auditor.py --logs products/llm-token-cost-auditor/examples/logs.jsonl --pricing products/llm-token-cost-auditor/examples/pricing.json --html-out products/llm-token-cost-auditor/examples/report.html --csv-out products/llm-token-cost-auditor/examples/report.csv
 ```
 
+## Example Output
+
+The `examples/` folder includes:
+
+- `report.csv`
+- `report.html`
+
 ## Paid Bundle
 
 Launch price: $19 on Gumroad. The paid bundle is planned to include anomaly rule presets, batch reporting examples, and a commercial-use license.
